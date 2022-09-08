@@ -1,3 +1,3 @@
-function  saludar ( )  {
-alerta ( "Hola Mundo" )
+function sayHello() {
+alert("Hello World")
 }

@@ -15,6 +15,7 @@
        document.write("<br/>Capacitancia= "+ Capacitancia);
        document.write("<br/>XL= "+ XL);
        document.write("<br/>XC= "+ XC);
+       document.write("<br/><br/><p><a href=\"../index.html\">volver</a></p>");
        
        }
  
@@ -22,4 +23,4 @@
 <input type="button" onclick="cuentas()" value="resultado de las cuentas"/>
 </body>
 </html>
-<p><a href='../index.html'>volver</a></p>
+

@@ -1,23 +1,25 @@
 <html>
+<head>
+</head>
 <body>
-<script type="text/JavaScript">
-var frecuencia = Number (prompt ("ingrese la frecuencia"));
-var inductancia = Number (prompt ("ingrese la inductancia"));
-var capacitancia = Number (prompt ("ingrese la capacitancia"));
-var pi = 6.28
-var xl = pi*frecuencia*inductancia
-var multiplicacion = pi*frecuencia*capacitancia
-var xc = 1/multiplicacion
-var promedio = suma/3
-if ( xc > xl){
- document.write("<b>El circuito es Inductivo</b>);
-}else if (xc > xl){
- document.write("<b>El circuito es Capacitivo</b>); 
-}
-else if (xc = xl){
- document.write("<b>El circuito esta en Resonancia</b>);
-}
+
+ <script type="text/javascript">
+    var Frecuencia=275;
+    var Inductancia=87;
+    var Capacitancia=153;
+    var XL= 6.28*Frecuencia*Inductancia;
+    var XC= 1/(6.28*Frecuencia*Capacitancia);
+      function cuentas() {
+       document.write("<br/>Frecuencia= "+Frecuencia );
+       document.write("<br/>Inductancia= "+ Inductancia);
+       document.write("<br/>Capacitancia= "+ Capacitancia);
+       document.write("<br/>XL= "+ XL);
+       document.write("<br/>XC= "+ XC);
+       document.write("<br/><br/><p><a href=\"../index.html\">volver</a></p>");
+                
+       }
+ 
 </script>
-<p><a href='../index.html'>volver</a></p>
+<input type="button" onclick="cuentas()" value="resultado de las cuentas"/>
 </body>
 </html>
